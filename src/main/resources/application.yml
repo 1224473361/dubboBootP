@@ -1,0 +1,18 @@
+server:
+ port: 8080
+
+spring:
+ application:
+  name: dubbo-auto-configuration-provider-demo
+  
+dubbo:
+  application:
+    name: dubbo-auto-configuration-provider-demo  
+  scan:
+    base-packages: com.test.demo.service.impl
+  protocol:
+    name: dubbo
+    port: 20000
+  registry:
+    address: zk地址（多个逗号分割）
+    protocol: zookeeper
